@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdn.jsdelivr.net/npm/web3@0.19.0/dist/web3.js"></script>
+<script src="index.js"></script>
+</head>
+<body>
+
+<p>Enter Your Node Collateral Address and Click "Submit":</p>
+
+<form id="nodestatus">
+  Address: <input type="text" name="address" id="address"><br>
+  <input type="button" onclick="getNodeStats()" value="Submit">
+</form>
+
+<p id="nodeaddress">Node Address:</p>
+<p id="status">Node Status:</p>
+<p id="blockcount">Payment History: 0 Blocks</p>
+<p id="totalrewards">Total Rewards Received: 0 XERO</p>
+<p id="dailyreward">Estimated Daily Reward: 0 XERO</p>
+</body>
+</html>
