@@ -1,3 +1,9 @@
+var myjson;
+
+$.getJSON("https://api.coingecko.com/api/v3/coins/bitcoin?tickers=true&market_data=true&community_data=true&developer_data=true&sparkline=true", function(data) {
+  myjson = `${data.market_data.current_price.usd}`;
+});
+
 window.addEventListener('load', function () {
   window.web3 = new Web3(new Web3.providers.HttpProvider("https://rpc.xerom.org"));
 })
@@ -8,7 +14,7 @@ var loopCount = 0;
 var balanceAdjustment = 0;
 var currentBalance = 0;
 var originalBalance = 0;
-var blockHistoryCount = 1000;
+var blockHistoryCount = 433;
 
 function getNodeStats() {
   address = document.getElementById('address').value;
@@ -93,4 +99,3 @@ function outputStats(originalBalance, currentBalance, balanceAdjustment) {
 
 console.log("Fetching your Xerom node stats..");
 getNodeStats();
-

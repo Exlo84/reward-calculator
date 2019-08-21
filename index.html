@@ -1,22 +1,110 @@
 <!DOCTYPE html>
 <html>
+
+<link rel="stylesheet" href="index.css">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
+
 <head>
-<script src="https://cdn.jsdelivr.net/npm/web3@0.19.0/dist/web3.js"></script>
-<script src="index.js"></script>
 </head>
+
 <body>
+  <div class="main-container">
+    <img src="logo.png" style="padding-top:20px">
 
-<p>Enter Your Node Collateral Address and Click "Submit":</p>
+    <!-- HEADER -->
+    <header class="block">
+      <ul class="header-menu horizontal-list">
+        <li>
+          <a class="header-menu-tab" href="" id="nodeaddress">
+          </a>
+        </li>
+      </ul>
+    </header>
 
-<form id="nodestatus">
-  Address: <input type="text" name="address" id="address"><br>
-  <input type="button" onclick="getNodeStats()" value="Submit">
-</form>
+    <!-- LEFT-CONTAINER -->
+    <div class="left-container container">
+      <div class="join-newsletter block">
+        <!-- JOIN NEWSLETTER (RIGHT-CONTAINER) -->
+        <h2 class="titular">Enter Your Collateral Address:</h2>
+        <div class="input-container">
+          <input type="text" placeholder="0xB69B9216B5089Dc3881A4E" class="email text-input" id="address">
+        </div>
+        <center><a type="button" class="button10XT" onclick="getNodeStats()" value="Submit">Search</a></center>
+      </div>
+      <div class="tweets block">
+        <!-- TWEETS (MIDDLE-CONTAINER) -->
+        <h2 class="titular"><span class="icon zocial-twitter"></span>LATEST TWEETS</h2>
+        <a class="twitter-timeline" data-height="325" data-theme="dark" href="https://twitter.com/XeromOfficial?ref_src=twsrc%5Etfw">Tweets by XeromOfficial</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
 
-<p id="nodeaddress">Node Address:</p>
-<p id="status">Node Status:</p>
-<p id="blockcount">Payment History: 0 Blocks</p>
-<p id="totalrewards">Total Rewards Received: 0 XERO</p>
-<p id="dailyreward">Estimated Daily Reward: 0 XERO</p>
+    <!-- MIDDLE-CONTAINER -->
+    <div class="middle-container container">
+      <div class="weather block clear">
+        <!-- WEATHER (MIDDLE-CONTAINER) -->
+        <h2 class="titular" id="status"><strong>LOADING</strong></h2>
+        <ul class="next-days">
+          <li>
+            <a href="#43">
+              <p class="next-days-date" id="blockcount">Waiting for input... <span class="scnd-font-color"></span></p>
+            </a>
+          </li>
+          <li>
+            <a href="#44">
+              <p class="next-days-date" id="totalrewards">Waiting for input... <span class="scnd-font-color"></span></p>
+            </a>
+          </li>
+          <li>
+            <a href="#45">
+              <p class="next-days-date" id="dailyreward">Waiting for input...<span class="scnd-font-color"></span></p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="social block">
+        <!-- SOCIAL (MIDDLE-CONTAINER) -->
+        <li><a href="https://twitter.com/intent/tweet?screen_name=XeromOfficial&ref_src=twsrc%5Etfw" data-show-count="false">
+            <div class="twitter icon"><span class="zocial-twitter"></span></div>
+            <h2 class="twitter titular">SHARE TO TWITTER</h2>
+          </a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </li></a>
+      </ul>
+    </div>
+
+    <!-- RIGHT-CONTAINER -->
+    <div class="right-container container">
+      <div class="menu-box block">
+        <!-- MENU BOX (LEFT-CONTAINER) -->
+        <h2 class="titular">NODE PRICES</h2>
+        <ul class="menu-box-menu">
+          <li>
+            <center><a class="menu-box-tab" href="#6" style="padding-left:5px">Chain Node: $<span class="chainu"></span> USD</a></center>
+          </li>
+          <li>
+            <center><a class="menu-box-tab" href="#8" style="padding-left:5px">Xero Node: $<span class="xerou"></span> USD</a></center>
+          </li>
+          <li>
+            <center><a class="menu-box-tab" href="#10" style="padding-left:5px">Link Node: $<span class="linku"></span> USD</a></center>
+          </li>
+          <li>
+            <center><a class="menu-box-tab" href="#12" style="padding-left:5px">Super Node: $<span class="superu"></span> USD</a></center>
+          </li>
+        </ul>
+      </div>
+    </div> <!-- end right-container -->
+  </div> <!-- end main-container -->
+
+  <script src="index.js"></script>
+  <script src="market.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/web3@0.19.0/dist/web3.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
+
 </body>
+
 </html>
