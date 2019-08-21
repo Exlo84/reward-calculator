@@ -14,7 +14,7 @@ var loopCount = 0;
 var balanceAdjustment = 0;
 var currentBalance = 0;
 var originalBalance = 0;
-var blockHistoryCount = 433;
+var blockHistoryCount = 1000;
 
 function getNodeStats() {
   address = document.getElementById('address').value;
