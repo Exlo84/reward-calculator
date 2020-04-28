@@ -7,7 +7,7 @@ $.getJSON("https://api.coingecko.com/api/v3/coins/bitcoin?tickers=true&market_da
 });
 
 //Chain Node USD
-$.getJSON('https://tradecx.io/api/tickers/xerobtc', function(data) {
+$.getJSON('https://asymetrex.com/api/tickers/xerobtc', function(data) {
 
   var text = (`${data.ticker.last}` * 5000) * myjson;
   var usdm = text.toFixed(3);
@@ -17,7 +17,7 @@ $.getJSON('https://tradecx.io/api/tickers/xerobtc', function(data) {
 
 
 //XERO Node USD
-$.getJSON('https://tradecx.io/api/tickers/xerobtc', function(data) {
+$.getJSON('https://asymetrex.com/api/tickers/xerobtc', function(data) {
 
   var text = (`${data.ticker.last}` * 20000) * myjson;
   var usdm = text.toFixed(3);
@@ -29,7 +29,7 @@ $.getJSON('https://tradecx.io/api/tickers/xerobtc', function(data) {
 
 
 //Link Node USD
-$.getJSON('https://tradecx.io/api/tickers/xerobtc', function(data) {
+$.getJSON('https://asymetrex.com/api/tickers/xerobtc', function(data) {
 
   var text = (`${data.ticker.last}` * 40000) * myjson;
   var usdm = text.toFixed(3);
@@ -41,7 +41,7 @@ $.getJSON('https://tradecx.io/api/tickers/xerobtc', function(data) {
 
 
 //Super Node USD
-$.getJSON('https://tradecx.io/api/tickers/xerobtc', function(data) {
+$.getJSON('https://asymetrex.com/api/tickers/xerobtc', function(data) {
 
   var text = (`${data.ticker.last}` * 80000) * myjson;
   var usdm = text.toFixed(3);
