@@ -5,7 +5,7 @@ $.getJSON("https://api.coingecko.com/api/v3/coins/bitcoin?tickers=true&market_da
 });
 
 window.addEventListener('load', function () {
-  window.web3 = new Web3(new Web3.providers.HttpProvider("https://rpc.xerom.org"));
+  window.web3 = new Web3(new Web3.providers.HttpProvider("https://rpc.xerom.cloud"));
 })
 var address = "";
 var balanceIncreaseCounter = 0;
